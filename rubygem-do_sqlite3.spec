@@ -12,6 +12,7 @@ Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems 
 BuildRequires:	ruby-devel
 BuildRequires:	rubygem(rake)
+BuildRequires:	sqlite3-devel
 
 %description
 Implements the DataObjects API for MySQL
