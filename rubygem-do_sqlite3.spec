@@ -35,18 +35,18 @@ Documents, RDoc & RI documentation for %{name}.
 %gem_install
 
 %files
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/do_sqlite3
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/do_sqlite3/*.rb
+%dir %{gem_dir}/gems/%{rbname}-%{version}
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib
+%{gem_dir}/gems/%{rbname}-%{version}/lib/*.rb
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib/do_sqlite3
+%{gem_dir}/gems/%{rbname}-%{version}/lib/do_sqlite3/*.rb
 %{ruby_sitearchdir}/%{rbname}/%{rbname}.so
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+%{gem_dir}/specifications/%{rbname}-%{version}.gemspec
 
 %files doc
-%{ruby_gemdir}/doc/%{rbname}-%{version}
-%{ruby_gemdir}/gems/%{rbname}-%{version}/*.markdown
-%{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
+%{gem_dir}/doc/%{rbname}-%{version}
+%{gem_dir}/gems/%{rbname}-%{version}/*.markdown
+%{gem_dir}/gems/%{rbname}-%{version}/LICENSE
 
 
 %changelog
