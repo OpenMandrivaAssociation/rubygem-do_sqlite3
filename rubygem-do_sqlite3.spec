@@ -4,11 +4,11 @@
 Summary:	DataObjects MySQL Driver
 Name:		rubygem-%{rbname}
 Url:		http://rubygems.org/gems/do_mysql
-Version:	0.10.7
-Release:	2
+Version:	0.10.14
+Release:	1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
-Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
+Source0:	http://gems.rubyforge.org/gems/do_sqlite3-0.10.14.gem
 BuildRequires:	rubygems 
 BuildRequires:	ruby-devel
 BuildRequires:	sqlite3-devel
@@ -47,18 +47,3 @@ Documents, RDoc & RI documentation for %{name}.
 %{gem_dir}/doc/%{rbname}-%{version}
 %{gem_dir}/gems/%{rbname}-%{version}/*.markdown
 %{gem_dir}/gems/%{rbname}-%{version}/LICENSE
-
-
-%changelog
-* Wed Feb 15 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.10.7-2
-+ Revision: 774499
-- drop dependency on rake, it's now provided by ruby standard library
-- mass rebuild of ruby packages against ruby 1.9.1
-
-  + Alexander Khrukin <akhrukin@mandriva.org>
-    - sqlite headers in BR
-
-* Tue Jan 24 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.10.7-1
-+ Revision: 767874
-- imported package rubygem-do_sqlite3
-
