@@ -3,7 +3,7 @@
 
 Summary:	DataObjects MySQL Driver
 Name:		rubygem-%{rbname}
-Url:		http://rubygems.org/gems/do_mysql
+Url:		https://rubygems.org/gems/do_mysql
 Version:	0.10.14
 Release:	2
 Group:		Development/Ruby
